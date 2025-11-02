@@ -12,6 +12,7 @@ export default function ReportBurnPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const response = await fetch(`${baseUrl}/api/`, {
+      cache: "no-store",
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ serialnumber }),
