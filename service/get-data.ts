@@ -1,7 +1,7 @@
 import { baseUrl } from "@/lib/url";
 
 export async function GetData() {
-  const response = await fetch(`${baseUrl}/api/`, {
+  const response = await fetch(`${baseUrl}/api/data`, {
     cache: "no-store",
     method: "GET",
   });
