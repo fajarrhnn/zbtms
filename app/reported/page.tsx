@@ -30,7 +30,7 @@ export default function ReportBurnPage() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <InputSN title="Start" serialnumber={serialnumber} changesn={changesn} />
+      <InputSN title="Report" serialnumber={serialnumber} changesn={changesn} />
     </form>
   );
 }

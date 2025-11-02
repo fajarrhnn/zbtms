@@ -1,1 +1,3 @@
-export const baseUrl = `${process.env.VERCEL_URL}` || "http://localhost:3000";
+export const baseUrl =
+  `${process.env.NEXT_PUBLIC_BASE_URL}` ||
+  `https://${process.env.VERCEL_URL || "localhost:3000"}`;
