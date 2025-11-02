@@ -12,7 +12,7 @@ export default function HomePage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const response = await fetch(`${baseUrl}/api`, {
+    const response = await fetch(`${baseUrl}/api/`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ serialnumber }),
